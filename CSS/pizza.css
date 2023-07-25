@@ -1,0 +1,167 @@
+* {
+   box-sizing: border-box; 
+   margin:0;
+   padding:0;
+   border:0;
+
+
+}
+
+#header {
+    background-color: #f4f5f0;
+    padding: 30px;
+    text-align: center;
+    font-size: 35px;
+   
+
+}
+
+.row {
+    width:70%;
+    margin: 0px auto;
+    background-color: #fff;
+
+}
+.column {
+    float: left;
+    width: 33.33%;
+    padding: 10px;
+    background-color: #fff;
+  }
+  
+
+  /* Clear floats after the columns */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+
+ 
+#frmMenu {
+    width:70%;
+    margin: 0px auto;
+    
+    background-color: #fff;
+    padding-bottom: 2%;
+    
+     box-shadow: 12px 0 15px -4px grey, -12px 0 8px -4px grey;
+}
+
+
+#cart {
+    top: 0;
+    width:70%;
+    margin: 3px auto;
+    padding: 2%;
+    visibility: hidden;
+    background-color: #fff;
+    
+
+}
+
+#showText {
+    width:70%;
+    margin: 0px auto;
+    padding:2%;
+
+}
+
+#buttongroup {
+    margin-top:1%;
+    display: flex;
+    justify-content: center;
+}
+
+#btnOrder {
+   margin-right: 10px;
+   top:50%;
+    background-color:#cd212a;
+    color: white;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+}
+
+#btnReset {
+
+top:50%;
+    color:white;
+    background-color: #008c45;
+    border:none; 
+    border-radius:10px; 
+    padding:15px;
+    min-height:30px; 
+    min-width: 120px;
+}
+
+#btnOrder:disabled,
+#btnOrder[disabled],
+#btnReset:disabled,
+#btnReset[disabled]{
+    opacity: 0.6;
+    cursor: not-allowed;
+}
+h1 {
+    margin: 0 0px 0 20px;
+    color: #008c45;
+    
+    text-align: center;
+}
+
+body, html {
+    height: 100%;
+ 
+}
+
+
+h3 {
+    color: #cd212a;
+    font-family: "Sofia", sans-serif;
+    padding-top:4px;
+}
+
+h4 {
+    padding-bottom: 2px;
+}
+
+div {
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f5f0;
+}
+
+li {
+
+    list-style:none;
+}
+
+#imgcontainer {
+    display: flex;
+    justify-content: center;
+    background-color: #fff;
+}
+
+img {
+    border-radius: 25px;
+   
+}
+
+#total {
+    color:#008c45;
+    font-weight: bold;
+}
+
+@media (max-width: 500px) {
+    .column {
+      width: 100%;
+    }
+    img {
+        width: 100%;
+        height: auto;
+    }
+  }   
+
